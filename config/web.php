@@ -38,6 +38,16 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'rules' => [
+                ['class' => 'iriscrm\Yii2PODataAdapter\ODataUrlRule'],
+            ],
+        ],
+    ],
+    'controllerMap' => [
+        'o-data-adapter' => 'iriscrm\Yii2PODataAdapter\implementation\ODataController',
     ],
     'params' => $params,
 ];

@@ -17,7 +17,10 @@
         "php": ">=5.4.0",
         "yiisoft/yii2": ">=2.0.5",
         "yiisoft/yii2-bootstrap": "*",
-        "yiisoft/yii2-swiftmailer": "*"
+        "yiisoft/yii2-swiftmailer": "*",
+        "POData/POData": "dev-master",
+        "iriscrm/Yii2PODataAdapter": "dev-master",
+        "iriscrm/SimplePOData": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
@@ -50,5 +53,20 @@
             "npm-asset-library": "vendor/npm",
             "bower-asset-library": "vendor/bower"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/POData/POData"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/iriscrm/Yii2PODataAdapter"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/iriscrm/SimplePOData"
+        }
+    ]
+
 }

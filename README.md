@@ -99,3 +99,23 @@ return [
 **NOTE:** Yii won't create the database for you, this has to be done manually before you can access it.
 
 Also check and edit the other files in the `config/` directory to customize your application.
+
+
+HOW TO USE
+----------
+
+Execute migration:
+
+~~~
+php yii migrate
+~~~
+
+Try to open next URLs:
+
+- http://localhost/basic/web/odata.svc/$metadata
+
+- http://localhost/basic/web/odata.svc/$count?&$filter=name eq 'Kon'
+
+- http://localhost/basic/web/odata.svc/Products(24)
+
+- http://localhost/basic/web/odata.svc/Products?$format=json&$skip=1&$top=14&$inlinecount=allpages&$filter=name eq 'Kon'&$orderby=id desc
