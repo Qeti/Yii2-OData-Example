@@ -19,8 +19,8 @@
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
         "POData/POData": "dev-master",
-        "iriscrm/Yii2PODataAdapter": "dev-master",
-        "iriscrm/SimplePOData": "dev-master"
+        "Qeti/Yii2PODataAdapter": "dev-master",
+        "Qeti/SimplePOData": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
@@ -61,11 +61,11 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/iriscrm/Yii2PODataAdapter"
+            "url": "https://github.com/qeti/Yii2PODataAdapter"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/iriscrm/SimplePOData"
+            "url": "https://github.com/qeti/SimplePOData"
         }
     ]
 
