@@ -13,7 +13,7 @@ class ODataController extends Controller
         // Delegate handling of request to ODataController of Yii2PODataAdapter
         return yii::$app->runAction('o-data-adapter', [
             'metaProviderClassName' => 'app\\models\\OData\\MetadataProvider',
-            'queryProviderMap' => '@vendor/iriscrm/Yii2PODataAdapter/implementation/QueryProvider.php',
+            'queryProviderMap' => '@vendor/qeti/yii2-podata-adapter/implementation/QueryProvider.php',
         ]);
     }
 

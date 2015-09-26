@@ -10,6 +10,7 @@ $config = [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'V5fgI4RbbN1t0z9S9BhFtvglfbPXqWyl',
+            'enableCsrfValidation' => false,
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -42,12 +43,12 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                ['class' => 'iriscrm\Yii2PODataAdapter\ODataUrlRule'],
+                ['class' => 'qeti\Yii2PODataAdapter\ODataUrlRule'],
             ],
         ],
     ],
     'controllerMap' => [
-        'o-data-adapter' => 'iriscrm\Yii2PODataAdapter\implementation\ODataController',
+        'o-data-adapter' => 'qeti\Yii2PODataAdapter\implementation\ODataController',
     ],
     'params' => $params,
 ];
